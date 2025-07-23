@@ -1,4 +1,4 @@
-# 🎬 CINEMATICA
+# 🎬 CINEMATICAa
 
 CINEMATICA is a React-based movie discovery application that allows users to browse popular movies from TMDB, search for specific titles, view detailed information, and manage a list of custom movies with full CRUD (Create, Read, Update, Delete) functionality.
 
