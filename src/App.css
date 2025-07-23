@@ -1,0 +1,80 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.app-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('https://image.tmdb.org/t/p/original/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: -2;
+  transform: scale(1.05);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Improve text visibility in search */
+.navbar .form-control {
+  color: #fff !important;
+}
+
+.navbar .form-control::placeholder {
+  color: #bbb !important;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.app-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), url('https://image.tmdb.org/t/p/original/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: -2;
+  transform: scale(1.05);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Improve text visibility in search */
+.navbar .form-control {
+  color: #fff !important;
+}
+
+.navbar .form-control::placeholder {
+  color: #bbb !important;
+}
+
+/* Fix for trailer backdrop */
+.trailer-backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}

@@ -1,0 +1,299 @@
+/* src/index.css */
+body {
+  background-color: #141414;
+  color: #e5e5e5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .movie-overlay {
+  opacity: 1;
+}
+
+.form-control:focus {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #555;
+  box-shadow: none;
+}
+
+.bg-dark {
+  background-color: #0f0f0f !important;
+}
+
+.dark-modal .modal-content {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.dark-modal .form-control {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #333;
+}
+
+.dark-modal .form-control:focus {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #555;
+}
+
+.btn-outline-danger {
+  color: #e50914;
+  border-color: #e50914;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+.btn-danger {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+.btn-danger:hover {
+  background-color: #b20710;
+  border-color: #b20710;
+}
+
+.alert-danger {
+  background-color: #e50914;
+  color: white;
+  border: none;
+}
+
+.movie-detail-page .hero-section {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.movie-detail-page .hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  padding: 2rem;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+
+/* Add to bottom of existing CSS */
+.movie-detail-page h1,
+.movie-detail-page h2,
+.movie-detail-page h3,
+.movie-detail-page h4,
+.movie-detail-page h5,
+.movie-detail-page p,
+.movie-detail-page span {
+  color: #fff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.movie-detail-page .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.movie-detail-page .btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.text-white {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.movie-detail-page {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.movie-detail-page .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px) brightness(0.4);
+  transform: scale(1.1);
+}
+
+.movie-detail-page .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(0,0,0,0.9) 20%, transparent 70%), 
+              linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 30%);
+}
+
+.movie-detail-page .position-relative {
+  position: relative;
+}
+
+.movie-detail-page .z-1 {
+  z-index: 1;
+}
+
+.text-white {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Fix for trailer backdrop */
+.trailer-backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Mobile navbar fixes */
+@media (max-width: 991px) {
+  .navbar .input-group {
+    width: 100%;
+  }
+  
+  .navbar .btn {
+    width: 100%;
+  }
+  
+  .movie-detail-page {
+    padding-top: 0.5rem;
+  }
+  
+  .movie-detail-page h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Footer adjustments */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-text {
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-link {
+    justify-content: center;
+  }
+}
+
+/* Improve form contrast */
+.form-control {
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+/* Mobile navbar fixes */
+@media (max-width: 991px) {
+  .navbar .input-group {
+    width: 100%;
+  }
+  
+  .navbar .btn {
+    width: 100%;
+  }
+  
+  .movie-detail-page {
+    padding-top: 0.5rem;
+  }
+  
+  .movie-detail-page h1 {
+    font-size: 2.2rem;
+  }
+  
+  /* Mobile footer adjustments */
+  .footer .col-md-6 {
+    text-align: center !important;
+  }
+  
+  .footer .d-flex {
+    justify-content: center !important;
+  }
+  
+  .footer .me-2 {
+    display: none; /* Hide "Created by" text on mobile */
+  }
+}
+
+/* Improve form contrast */
+.form-control {
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+/* Footer adjustments */
+.footer .github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  .movie-detail-page {
+    padding-top: 0.5rem !important;
+  }
+  
+  .movie-detail-page .display-4 {
+    font-size: 2rem;
+  }
+  
+  .navbar-collapse {
+    background-color: #0f0f0f;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Fix for trailer duplication */
+.react-player__preview {
+  display: none !important;
+}
+
+/* Ensure proper footer placement */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
