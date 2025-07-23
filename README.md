@@ -24,24 +24,17 @@ CINEMATICA is a React-based movie discovery application that allows users to bro
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-cinematica/
-├── public/
-├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── redux/
-│ ├── App.js
-│ ├── index.js
-├── .gitignore
-├── package.json
-└── README.md
-
-yaml
-Copy
-Edit
-
+src/
+├── components/       # Reusable components
+├── context/          # React context providers
+├── pages/            # Page components
+├── services/         # API services
+├── assets/           # Images and other assets
+├── App.js            # Main application component
+├── index.js          # Entry point
+└── index.css         # Global styles
 ---
 
 ## 📸 Screenshots
