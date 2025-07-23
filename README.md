@@ -32,7 +32,7 @@ Coming soon...
 
 ## 📌 Website Link ⬇
 
-**🔗 [https://cinematicamovie.netlify.app/](https://mycinematica.netlify.app/)**
+**🔗 [https://mycinematicamovie.netlify.app/](https://mycinematica.netlify.app/)**
 
 ---
 
