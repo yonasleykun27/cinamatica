@@ -1,92 +1,98 @@
-# CINEMATICA - Movie Discovery App
+# 🎬 CINEMATICA – Movie Discovery App
 
-![CINEMATICA Screenshot](./src/assets/screenshot.png) <!-- Add a screenshot later -->
+![CINEMATICA Screenshot](./src/assets/screenshot.png) <!-- Replace with your own image -->
 
-CINEMATICA is a React-based movie discovery application that allows users to browse popular movies, search for specific titles, view movie details, and manage a list of custom movies with full CRUD (Create, Read, Update, Delete) functionality.
+**CINEMATICA** is a sleek and responsive React-based movie discovery application. It allows users to browse trending movies, search titles, view detailed info, and manage a list of custom movies with full CRUD (Create, Read, Update, Delete) functionality.
 
-## Features
+---
 
-- 🎬 **Browse Popular Movies**: Discover the latest and most popular movies from TMDB
-- 🔍 **Search Functionality**: Find movies by title
-- 📺 **Movie Details**: View comprehensive information about each movie
-- ➕ **Add Custom Movies**: Create your own movie entries
-- ✏️ **Edit Movies**: Update details of your custom movies
-- 🗑️ **Delete Movies**: Remove movies from your collection
-- ▶️ **Trailer Playback**: Watch movie trailers directly in the app
-- 📱 **Fully Responsive**: Works on mobile, tablet, and desktop devices
+## ✨ Features
 
-## Technologies Used
+- 🎬 Browse popular movies from the TMDB API
+- 🔍 Search for movies by title
+- 📺 View movie details (overview, genres, runtime, rating, etc.)
+- ➕ Add your own custom movies
+- ✏️ Edit custom movie information
+- 🗑️ Delete movies from your custom list
+- ▶️ Play official trailers within the app
+- 📱 Fully responsive for all screen sizes
 
-- **React** - JavaScript library for building user interfaces
-- **React Router** - Navigation and routing
-- **React Bootstrap** - UI components and styling
-- **React Icons** - Icon library
-- **Axios** - HTTP client for API requests
-- **TMDB API** - Movie database API
-- **Netlify** - Deployment and hosting
+---
 
-## Getting Started
+## Main Technologies For The Project
+
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)  
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
+---
+
+## Website Link ⬇
+
+Explore the details by visiting now and immerse yourself in the world of movies!  
+Feel free to share your observations with me.
+
+👉 **https://movnite.netlify.app/**
+
+---
+
+## 📁 Folder Structure
+
+src/
+├── assets/ # App images, icons
+├── components/ # Reusable UI components (Header, Footer, MovieCard, etc.)
+├── context/ # Global state context
+├── pages/ # Main page components (Home, Details, AddMovie, etc.)
+├── services/ # API logic (Axios + TMDB)
+├── App.js # Main app wrapper
+├── index.js # Entry point
+└── index.css # Global styles
+
+yaml
+Copy
+Edit
+
+---
+
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)
-- npm (v6+)
-- TMDB API key (free tier)
+- Node.js v14 or higher
+- npm v6 or higher
+- TMDB API key (get one free from [TMDB](https://www.themoviedb.org/documentation/api))
 
-### Installation
+### Setup Instructions
 
-1. Clone the repository:
+1. Clone the repo
+
 ```bash
 git clone https://github.com/yonasleykun27/cinamatica.git
 cd cinamatica
-Install dependencies:
+Install dependencies
 
 bash
+Copy
+Edit
 npm install
-Create a .env file in the root directory and add your TMDB API key:
+Create a .env file in the root and add your API keys:
 
 env
-REACT_APP_TMDB_API_KEY=your_api_key_here
+Copy
+Edit
+REACT_APP_TMDB_API_KEY=your_tmdb_key_here
 REACT_APP_TMDB_BASE_URL=https://api.themoviedb.org/3
-Start the development server:
+Start the development server
 
 bash
+Copy
+Edit
 npm start
-Open your browser and visit:
+🙋‍♂️ Author
+Yonas Leykun
+📧 yonasleykun27@gmail.com
+🔗 GitHub Profile
 
-text
-http://localhost:3000
-Project Structure
-text
-src/
-├── components/       # Reusable components
-├── context/          # React context providers
-├── pages/            # Page components
-├── services/         # API services
-├── assets/           # Images and other assets
-├── App.js            # Main application component
-├── index.js          # Entry point
-└── index.css         # Global styles
-Deployment
-This app is deployed on Netlify. See the deployment section below for instructions.
-
-Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the project
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a pull request
-
-License
-Distributed under the MIT License. See LICENSE for more information.
-
-Contact
-Yonas Leykun - GitHub - Email
-
-Project Link: https://github.com/yonasleykun27/cinamatica
+📄 License
+This project is licensed under the MIT License – feel free to use, modify, and distribute.
