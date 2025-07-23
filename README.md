@@ -32,9 +32,6 @@ Coming soon...
 
 ## 📌 Website Link ⬇
 
-Explore the details by visiting now and immerse yourself in the world of movies!  
-Feel free to share your observations with me.
-
 **🔗 [https://cinematica.netlify.app/](https://cinematica.netlify.app/)**
 
 ---
