@@ -8,10 +8,9 @@ const MovieForm = () => {
     showForm, 
     setShowForm, 
     currentMovie, 
-    handleFormSubmit,
-    setCurrentMovie
-  } = useMovieContext();
-  
+    handleFormSubmit 
+  } = useMovieContext(); // ✅ Removed unused setCurrentMovie
+
   const [formData, setFormData] = useState({
     title: '',
     overview: '',
@@ -70,7 +69,7 @@ const MovieForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -85,14 +84,13 @@ const MovieForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
-    // Prepare data for submission
     const submissionData = {
       ...formData,
       genres: formData.genres.split(',').map(g => g.trim()).filter(g => g),
@@ -178,7 +176,7 @@ const MovieForm = () => {
                 </Form.Text>
               </Form.Group>
             </div>
-            
+
             <div className="col-md-6">
               <Form.Group className="mb-3">
                 <Form.Label>Release Date</Form.Label>
@@ -294,7 +292,7 @@ const MovieForm = () => {
               </Form.Group>
             </div>
           </div>
-          
+
           <div className="d-flex justify-content-end mt-4">
             <Button variant="outline-secondary" onClick={() => setShowForm(false)} className="me-2">
               Cancel
