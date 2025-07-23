@@ -50,4 +50,4 @@ For feedback or feature requests, feel free to contact me or open an issue.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE). 
